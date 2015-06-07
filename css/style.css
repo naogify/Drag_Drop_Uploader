@@ -1,0 +1,38 @@
+#drop{
+	background-color: #ffffff;
+	width:700px; 
+	height:150px;
+	padding:10px;
+	border:1px solid;
+  overflow:hidden;
+}
+
+#drop.active{
+	background-color: #fffaf0;	
+}
+
+
+#btn{
+	position: absolute;
+	left: 102px;
+	top: 173px;
+}
+
+#zero{
+	position: absolute;
+	left: 54px;
+	top: 79px;
+}
+
+#zero1{
+	position: absolute;
+	left: 100px;
+	top: 94px;
+}
+
+.hide{
+	display: none;
+}
+.active{
+	display: block;
+}
