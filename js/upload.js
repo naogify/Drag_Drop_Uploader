@@ -38,7 +38,7 @@ $(function(){
 			$("#success").removeClass("active");
 
 		}
-    //単一ファイル時のみ送信・削除ボタン追加。ファイルプロパティを表示。
+    		//単一ファイル時のみ送信・削除ボタン追加。ファイルプロパティを表示。
 		else if(files.length==1){
 			$("#btn").addClass("active").addClass("btn");
 			$("#drop").addClass("active");
@@ -49,7 +49,7 @@ $(function(){
 
 			addBtn();
  		}
-    //それ以外の時、ファイル削除する事で複数ファイルのドロップ防止。
+    		//それ以外の時、ファイル削除する事で複数ファイルのドロップ防止。
 		else{
 			del();
 			$("#text").removeClass("active");
@@ -58,7 +58,7 @@ $(function(){
 		}
 	}//--onDrop
 
-  //削除・送信ボタン追加。プロパティ表示。
+  	//削除・送信ボタン追加。プロパティ表示。
 	function addBtn(){	
 		var f=files[0];
 		$("#disp").html('<div id="zero1" ><button type="button" id="zero" >削除</button>ファイル名 :' + f.name + '<br>' +  'ファイルの型:' + f.type + '<br>' + 'ファイルサイズ:' + f.size / 1000 + 'KB<br /></div>');
@@ -74,7 +74,7 @@ $(function(){
 		console.log("pass delBtn!");
 	} //-del
 
-  //送信ユニット
+  	//送信ユニット
 	$("#btn").click(function(){
 		$("#drop").removeClass("active");
 		$("#btn").removeClass("active");
